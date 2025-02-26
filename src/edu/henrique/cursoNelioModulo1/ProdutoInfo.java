@@ -1,4 +1,4 @@
-package edu.henrique.cursoNelioModuloUm;
+package edu.henrique.cursoNelioModulo1;
 
 import java.util.Locale;
 
