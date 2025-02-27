@@ -2,6 +2,9 @@ package edu.henrique;
 
 import edu.henrique.cursoNelioModulo1.funcMat;
 import edu.henrique.cursoNelioModulo2.condic;
+import edu.henrique.cursoNelioModulo2.suite;
+import edu.henrique.cursoNelioModulo3.para;
+import edu.henrique.cursoNelioModulo3.uaile;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,11 +31,12 @@ public class Main {
         //condic.ifelsesimples();
         //condic.ifelsecompos();
 
-//-------------------------------------A031 Abaixo--------------------------------------------------
-   
-
+//-------------------------------------A031 - A03 Abaixo--------------------------------------------------
+        //suite.suitecase();
+        //uaile.estwhile();
+        //para.parafor();
     }
 
 }
 
-// Aula para assistir: #A031 (Começo)
+// Aula para assistir: #A033 (Começo)
