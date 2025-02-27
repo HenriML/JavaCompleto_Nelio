@@ -5,6 +5,7 @@ import edu.henrique.cursoNelioModulo2.condic;
 import edu.henrique.cursoNelioModulo2.suite;
 import edu.henrique.cursoNelioModulo3.para;
 import edu.henrique.cursoNelioModulo3.uaile;
+import edu.henrique.cursoNelioModulo4POO.problemaTriangulo;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,10 +32,15 @@ public class Main {
         //condic.ifelsesimples();
         //condic.ifelsecompos();
 
-//-------------------------------------A031 - A03 Abaixo--------------------------------------------------
+//-------------------------------------A031 - A050 Abaixo--------------------------------------------------
         //suite.suitecase();
         //uaile.estwhile();
         //para.parafor();
+
+//-------------------------------------A051 - A0 Abaixo - POO --------------------------------------------------
+        problemaTriangulo.application();
+
+
     }
 
 }
