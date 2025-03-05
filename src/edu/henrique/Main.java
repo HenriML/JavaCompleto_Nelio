@@ -1,6 +1,6 @@
 package edu.henrique;
 
-import edu.henrique.cursoNelioModulo5POO.Program;
+import edu.henrique.cursoNelioModulo5POOExec.Program;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +35,7 @@ public class Main {
 //-------------------------------------A051 - A054 Abaixo - POO --------------------------------------------------
         //problemaTriangulo.application();
 //-------------------------------------A054 - A057 Abaixo - POO --------------------------------------------------
+        //Program.application();
         Program.application();
 
     }
