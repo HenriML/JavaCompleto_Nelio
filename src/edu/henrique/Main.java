@@ -1,11 +1,8 @@
 package edu.henrique;
 
-import edu.henrique.cursoNelioModulo1.funcMat;
-import edu.henrique.cursoNelioModulo2.condic;
-import edu.henrique.cursoNelioModulo2.suite;
-import edu.henrique.cursoNelioModulo3.para;
-import edu.henrique.cursoNelioModulo3.uaile;
+import edu.henrique.cursoNelioModulo4POO.Triangle;
 import edu.henrique.cursoNelioModulo4POO.problemaTriangulo;
+import edu.henrique.cursoNelioModulo5POO.storage
 
 public class Main {
     public static void main(String[] args) {
@@ -37,12 +34,13 @@ public class Main {
         //uaile.estwhile();
         //para.parafor();
 
-//-------------------------------------A051 - A0 Abaixo - POO --------------------------------------------------
-        problemaTriangulo.application();
+//-------------------------------------A051 - A054 Abaixo - POO --------------------------------------------------
+        //problemaTriangulo.application();
+//-------------------------------------A054 - A0 Abaixo - POO --------------------------------------------------
 
 
     }
 
 }
 
-// Aula para assistir: #A033 (Começo)
+// Aula para assistir: #A055 (Começo)

@@ -3,36 +3,37 @@ package edu.henrique.cursoNelioModulo4POO;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class problemaTriangulo {
+public class ArquivoBase_problemaTriangulo {
     public static void application(){
 
-
+        double xa, xb, xc, ya, yb, yc;
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Triangle x, y;
-        x = new Triangle(); //Instância da classe, ou seja, declaração de objeto
-        y = new Triangle();
-
         System.out.println("Enter the measures of triangle X: ");
         System.out.println("Put the first measure: ");
-        x.a = sc.nextDouble();
+        xa = sc.nextDouble();
         System.out.println("Put the second measure: ");
-        x.b = sc.nextDouble();
+        xb = sc.nextDouble();
         System.out.println("Put the third measure: ");
-        x.c = sc.nextDouble();
+        xc = sc.nextDouble();
 
 
         System.out.println("Now, enter the measures of triangle Y: ");
         System.out.println("Put the first measure: ");
-        y.a = sc.nextDouble();
+        ya = sc.nextDouble();
         System.out.println("Put the second measure: ");
-        y.b = sc.nextDouble();
+        yb = sc.nextDouble();
         System.out.println("Put the third measure: ");
-        y.c = sc.nextDouble();
+        yc = sc.nextDouble();
 
-        double areaX = x.area();
-        double areaY = y.area();
+
+        double p = (xa + xb + xc) / 2.0;
+        double areaX = Math.sqrt(p * (p - xa) *(p - xb) *(p - xc));
+
+
+        p = (ya + yb + yc) / 2.0;
+        double areaY = Math.sqrt(p * (p - ya) *(p - yb) *(p - yc));
 
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle X area: %.4f%n", areaY);

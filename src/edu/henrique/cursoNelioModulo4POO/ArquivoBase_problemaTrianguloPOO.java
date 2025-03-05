@@ -3,7 +3,7 @@ package edu.henrique.cursoNelioModulo4POO;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class problemaTriangulo {
+public class ArquivoBase_problemaTrianguloPOO {
     public static void application(){
 
 
@@ -31,8 +31,13 @@ public class problemaTriangulo {
         System.out.println("Put the third measure: ");
         y.c = sc.nextDouble();
 
-        double areaX = x.area();
-        double areaY = y.area();
+
+        double p = (x.a + x.b + x.c) / 2.0;
+        double areaX = Math.sqrt(p * (p - x.a) *(p - x.b) *(p - x.c));
+
+
+        p = (y.a + y.b + y.c) / 2.0;
+        double areaY = Math.sqrt(p * (p - y.a) *(p - y.b) *(p - y.c));
 
         System.out.printf("Triangle X area: %.4f%n", areaX);
         System.out.printf("Triangle X area: %.4f%n", areaY);
