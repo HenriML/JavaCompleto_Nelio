@@ -1,7 +1,9 @@
 package edu.henrique;
 
 
+import edu.henrique.cursoNelioModulo5POOExec.Program;
 import edu.henrique.cursoNelioModulo6POO.ProgramVers1_Vers2;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -38,9 +40,9 @@ public class Main {
 //-------------------------------------A054 - A057 Abaixo - POO --------------------------------------------------
         //Program.application();
 //-------------------------------------A054 - A058 EXEC Abaixo - POO --------------------------------------------------
-        //Program.application();
+        Program.application();
 //-------------------------------------A058 - A0 Abaixo - POO --------------------------------------------------
-        ProgramVers1_Vers2.application();
+        //ProgramVers1_Vers2.application();
 
     }
 

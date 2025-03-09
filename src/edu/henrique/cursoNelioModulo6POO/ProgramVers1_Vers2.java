@@ -7,7 +7,7 @@ import java.util.Scanner;
 //O método é chadado de acordo com a instância - Tipo chamar o método "área" para cada intância "Triangulo" assim fazendo o cálculo de ambos com o mesmo método
 // Classes utilitárias de membros estáticos, a Math.sqrt por exemplo
 //Uma classe que possui somente membros estáticos não pode ser instanciada
-
+//A Marina Simões Vieira é o amorzinho da minha vida!!! <3
 
 public class ProgramVers1_Vers2 {
     public static void application() {
