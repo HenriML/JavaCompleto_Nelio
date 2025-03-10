@@ -1,8 +1,8 @@
 package edu.henrique;
 
 
-import edu.henrique.cursoNelioModulo5POOExec.Program;
-import edu.henrique.cursoNelioModulo6POO.ProgramVers1_Vers2;
+import edu.henrique.cursoNelioModulo7POOConstru.*;
+
 
 
 public class Main {
@@ -40,10 +40,12 @@ public class Main {
 //-------------------------------------A054 - A057 Abaixo - POO --------------------------------------------------
         //Program.application();
 //-------------------------------------A054 - A058 EXEC Abaixo - POO --------------------------------------------------
-        Program.application();
-//-------------------------------------A058 - A0 Abaixo - POO --------------------------------------------------
+        //Program.application();
+//-------------------------------------A058 - A061 Abaixo - POO --------------------------------------------------
         //ProgramVers1_Vers2.application();
 
+//-------------------------------------A062 - A0 Abaixo - POO --------------------------------------------------
+        Program.application();
     }
 
 }
