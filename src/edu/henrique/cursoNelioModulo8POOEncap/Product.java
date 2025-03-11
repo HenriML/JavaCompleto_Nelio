@@ -44,14 +44,17 @@ public class Product {
 
     //----------------------------------------------------------------Functions
     public double TotalValueInStock(){
+
         return price * quantity;
     }
 
     public void addProducts(int quantity){
+
         this.quantity += quantity;
     }
 
     public void RemoveProducts(int quantity){
+
         this.quantity -= quantity ;
     }
 
