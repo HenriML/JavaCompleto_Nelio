@@ -50,5 +50,5 @@ public class Main {
 
 }
 
-// Aula para assistir: #A068 (Começo)
+// Aula para assistir: #A072 (Começo)
 // Alterar rotina
