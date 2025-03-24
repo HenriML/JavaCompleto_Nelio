@@ -2,9 +2,11 @@ package edu.henrique;
 
 import edu.henrique.cursoNelioParte2.cursoNelioModulo14.*;
 
+import java.text.ParseException;
+
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         //ProdutoInfo.executar();
         //System.out.println("AAAAAAA");
         //Operacoes.somando();
