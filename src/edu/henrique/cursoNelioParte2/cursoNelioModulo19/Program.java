@@ -71,6 +71,13 @@ public class Program {
 /*
 First try - need fix logic
 
+Explicação das mudanças:
+do-while para validar a entrada do usuário: O loop garante que o usuário só pode sair quando pressionar 'y' ou 'n'.
+
+Corrigido if (ch != 'y' || ch != 'n'): O operador correto é && (E lógico), porque 'ch' nunca pode ser diferente de ambos ao mesmo tempo. A correção foi while (ch != 'y' && ch != 'n').
+
+Adicionado list.add(emp); no else: Antes, o funcionário interno não era adicionado à lista.
+
 
 for(int i = 1; i <= n; i++) {
             System.out.println("Employee #" + i + "data: ");
