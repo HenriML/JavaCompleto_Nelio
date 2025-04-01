@@ -1,47 +1,40 @@
 package edu.henrique.cursoNelioParte2.cursoNelioModulo22;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Program {
-    public static void application(){
+    public static void application() {
+        method1();
 
+        System.out.println("End of program");
 
-
-        /*
-                                         Tipos de erros
-
-
-
-                                                                    -> OutOfMemoryError = Estouro de memória
-                                                                   |
-                                                   -> Classe Error | (Error é esperado que o dev não consiga arrumar com código)
-                                                                   |
-                                                /                   -> VirtualMachineError = Erro na VM
-                                            |
-                  Classe Throwable-------|
-                                            |
-                                                \
-                                                                    -> IOException = Erro de entrada/Saída de dados/input
-                                                                    |
-                                                -> Classe Exception | (Exception é esperado que o dev  consiga arrumar com código)
-                                                                    |
-                                                                    -> RuntimeException = Exceções por erro de código. Resulta nos dois abaixo:
-                                                                              |
-                                                                              |
-                                                                              |
-                                                                              |
-                                                                              |
-                                                                              | -> IndexOutOfBoundsException = Exceção de por exemplo tentar acessar uma posição de array que não existe
-                                                                              |
-                                                                              |
-                                                                              |
-                                                                              |
-                                                                              | -> NullPointerException = Exceção de quando tenta acessar uma VAR que vale NULL - Ou seja, Ponteiro para Null
-
-
-
-
-
-
-
-         */
+        }
+    public static void method1() {
+        System.out.println("***Método 1 - Start***");
+        method2();
+        System.out.println("***Método 1 - End***");
     }
+
+    public static void method2() {
+        System.out.println("***Método 2 - Start***");
+        Scanner sc = new Scanner(System.in);
+        try {
+            String[] vect = sc.nextLine().split(" ");
+            int position = sc.nextInt();
+            System.out.println(vect[position]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid Position");
+            e.printStackTrace();// Imprime o rastreamento do stack - É possivel rastrear pelo erro dado como chegar na exceção.
+        } catch (InputMismatchException g) {
+            System.out.println("Input Error");
+
+            // Se procurar pelo vetor com algo fora de número: Mismatch
+            // Se procurar pelo vetor com algo fora de número: OutOfBounds
+        }
+        System.out.println("***Método 2 - End***");
+        sc.close();
+    }
+
+
 }
