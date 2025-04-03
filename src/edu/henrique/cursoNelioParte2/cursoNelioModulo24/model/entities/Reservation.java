@@ -1,4 +1,4 @@
-package edu.henrique.cursoNelioParte2.cursoNelioModulo23.model.entities;
+package edu.henrique.cursoNelioParte2.cursoNelioModulo24.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -48,9 +48,17 @@ public class Reservation {
     }
 
     public String updateDates(Date checkIn, Date checkOut){
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        Date now = new Date();
+        if (checkIn.before(now) || checkOut.before(now)) {
+            return "Reservation dates must be future dates";
+        }
+        if (!checkOut.after(checkIn)) {
+            return "Check-out date must be after check-in date";
+        }
         this.checkIn = checkIn;
         this.checkOut = checkOut;
-        return null;
+        return null + "Verificado"; // Se retornar alguma String, deu erro, se retornar null, é pq passou plo check
     }
 
     @Override
