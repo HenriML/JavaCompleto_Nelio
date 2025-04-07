@@ -1,6 +1,6 @@
 package edu.henrique;
 
-import edu.henrique.cursoNelioParte2.cursoNelioModulo24.Program;
+import edu.henrique.cursoNelioParte2.cursoNelioModulo25.Program;
 import edu.henrique.cursoNelioParte2.cursoNelioModulo22.finallyy;
 
 import java.text.ParseException;
@@ -61,5 +61,5 @@ public class Main {
 
 }
 
-// Aula para assistir: #A151 (Começo)
+// Aula para assistir: #A153 (Começo)
 // Alterar rotina
