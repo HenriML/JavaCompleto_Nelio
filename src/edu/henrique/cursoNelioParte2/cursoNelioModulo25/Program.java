@@ -19,32 +19,36 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Program {
-    public static void application() throws ParseException {
+    public static void application(){
 
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        System.out.println("Room number: ");
-        int number = sc.nextInt();
-        System.out.println("CheckIn date: ");
-        Date checkIn = sdf.parse(sc.next());
-        System.out.println("CheckOut date: ");
-        Date checkOut = sdf.parse(sc.next());
+        try {
+            System.out.println("Room number: ");
+            int number = sc.nextInt();
+            System.out.println("CheckIn date: ");
+            Date checkIn = sdf.parse(sc.next());
+            System.out.println("CheckOut date: ");
+            Date checkOut = sdf.parse(sc.next());
 
 
-        Reservation reservation = new Reservation(number, checkIn, checkOut);
-        System.out.println("Reservation: " + reservation);
-        System.out.println();
+            Reservation reservation = new Reservation(number, checkIn, checkOut);
+            System.out.println("Reservation: " + reservation);
+            System.out.println();
 
-        System.out.println("Enter data to update the reservation: ");
-        System.out.println("CheckIn date: ");
-        checkIn = sdf.parse(sc.next());
-        System.out.println("CheckOut date: ");
-        checkOut = sdf.parse(sc.next());
+            System.out.println("Enter data to update the reservation: ");
+            System.out.println("CheckIn date: ");
+            checkIn = sdf.parse(sc.next());
+            System.out.println("CheckOut date: ");
+            checkOut = sdf.parse(sc.next());
 
-        String error = reservation.updateDates(checkIn, checkOut);
-        System.out.println("Reservation: " + reservation);
-
+            String error = reservation.updateDates(checkIn, checkOut);
+            System.out.println("Reservation: " + reservation);
+        }
+        catch(ParseExeption e) {
+            System.out.println("Invalid Date Format");
+        }
 
         
         sc.close();
