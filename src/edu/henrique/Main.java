@@ -1,6 +1,6 @@
 package edu.henrique;
 
-import edu.henrique.cursoNelioParte2.cursoNelioModulo25.Program;
+import edu.henrique.cursoNelioParte3.cursoNelioModulo27.Program;
 import edu.henrique.cursoNelioParte2.cursoNelioModulo22.finallyy;
 import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.exceptions.DomainException;
 
@@ -55,16 +55,18 @@ public class Main {
 
         //Program.application();
         //finallyy.application();
-        try {
+       /* try {
             Program.application();
         } catch (DomainException e) {
             throw new RuntimeException(e);
         }
+*/
 
+        Program.application();
 
     }
 
 }
 
-// Aula para assistir: #A153 (Começo)
+// Aula para assistir: #A189 (Começo)
 // Alterar rotina
