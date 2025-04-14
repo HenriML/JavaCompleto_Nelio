@@ -11,7 +11,8 @@ MODEL----|
 
  */
 
-import edu.henrique.cursoNelioParte2.cursoNelioModulo23.model.entities.Reservation;
+import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.entities.Reservation;
+import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.exceptions.DomainException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,12 +20,12 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Program {
-    public static void application(){
+    public static void application() throws DomainException {
 
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        try {
+        try  {
             System.out.println("Room number: ");
             int number = sc.nextInt();
             System.out.println("CheckIn date: ");
@@ -43,14 +44,21 @@ public class Program {
             System.out.println("CheckOut date: ");
             checkOut = sdf.parse(sc.next());
 
-            String error = reservation.updateDates(checkIn, checkOut);
+            reservation.updateDates(checkIn, checkOut);
             System.out.println("Reservation: " + reservation);
         }
-        catch(ParseExeption e) {
+        catch(ParseException e) {
             System.out.println("Invalid Date Format");
         }
+        catch(DomainException e) { // Usando aquele throw new IllegalArgument instanciado, eu uso o catch para gerar uma erro padronizado
+            System.out.println("Error in reservation" + e.getMessage());
+        }
+        catch (RuntimeException e){
+            System.out.println("Unexpected Error!");
+            System.out.println("Try again, please!");
+        }
 
-        
+
         sc.close();
     }
 }

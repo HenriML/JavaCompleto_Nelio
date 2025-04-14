@@ -1,5 +1,7 @@
 package edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.entities;
 
+import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.exceptions.DomainException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -16,7 +18,10 @@ public class Reservation {
     }
 
     //Constructor
-    public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
+    public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException {
+        if (!checkOut.after(checkIn)) {
+            throw new DomainException(" Check-out date must be after check-in date");
+        }
         this.roomNumber = roomNumber;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
@@ -47,18 +52,17 @@ public class Reservation {
        return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
-    public String updateDates(Date checkIn, Date checkOut){
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+    public void updateDates(Date checkIn, Date checkOut) throws DomainException{
         Date now = new Date();
         if (checkIn.before(now) || checkOut.before(now)) {
-            return "Reservation dates must be future dates";
+            throw new DomainException(" Reservation dates must be future dates"); //Instanciando uma exception para o catch
         }
         if (!checkOut.after(checkIn)) {
-            return "Check-out date must be after check-in date";
+            throw new DomainException(" Check-out date must be after check-in date");
         }
         this.checkIn = checkIn;
         this.checkOut = checkOut;
-        return null + "Verificado"; // Se retornar alguma String, deu erro, se retornar null, é pq passou plo check
+        //return null + "Verificado"; -- Se retornar alguma String, deu erro, se retornar null, é pq passou plo check
     }
 
     @Override

@@ -2,6 +2,7 @@ package edu.henrique;
 
 import edu.henrique.cursoNelioParte2.cursoNelioModulo25.Program;
 import edu.henrique.cursoNelioParte2.cursoNelioModulo22.finallyy;
+import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.exceptions.DomainException;
 
 import java.text.ParseException;
 
@@ -54,7 +55,11 @@ public class Main {
 
         //Program.application();
         //finallyy.application();
-        Program.application();
+        try {
+            Program.application();
+        } catch (DomainException e) {
+            throw new RuntimeException(e);
+        }
 
 
     }

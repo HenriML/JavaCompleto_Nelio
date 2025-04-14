@@ -11,7 +11,7 @@ MODEL----|
 
  */
 
-import edu.henrique.cursoNelioParte2.cursoNelioModulo23.model.entities.Reservation;
+import edu.henrique.cursoNelioParte2.cursoNelioModulo24.model.entities.Reservation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
