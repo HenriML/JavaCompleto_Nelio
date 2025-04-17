@@ -11,6 +11,7 @@ MODEL----|
 
  */
 
+import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.entities.CarRental;
 import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.entities.Reservation;
 import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.exceptions.DomainException;
 
@@ -57,6 +58,7 @@ public class Program {
             System.out.println("Unexpected Error!");
             System.out.println("Try again, please!");
         }
+
 
 
         sc.close();
