@@ -1,6 +1,4 @@
-package edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.entities;
-
-import edu.henrique.cursoNelioParte3.cursoNelioModulo30.entities.Vehicle;
+package edu.henrique.cursoNelioParte3.cursoNelioModulo30.entities;
 
 import java.time.LocalDateTime;
 
@@ -14,11 +12,12 @@ public class CarRental {
     public CarRental(){
     }
 
-    public CarRental(LocalDateTime start, Vehicle vehicle, LocalDateTime finish) {
+    public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle vehicle) {
         this.start = start;
-        this.vehicle = vehicle;
         this.finish = finish;
+        this.vehicle = vehicle;
     }
+
 
     public LocalDateTime getStart() {
         return start;

@@ -1,4 +1,4 @@
-package edu.henrique.cursoNelioParte3.cursoNelioModulo30.Entities;
+package edu.henrique.cursoNelioParte3.cursoNelioModulo30.entities;
 
 public class Vehicle {
     private String model;
