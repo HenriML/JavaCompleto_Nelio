@@ -37,7 +37,7 @@ public class Program {
         finally { // Como esses métodos não são chamados via JAVA JDK(Interno) se não fechar pode vazar memória e estourar, então o fuinally serve para isso, além de quê para evitar try/catch (Statements podem dar) eu tratei deles lá no DBClass
             DB.closeStatement(st);
             DB.closeResultSet(rs);
-            DB.closeConnection();
+            DB.closeConnection(); // A Mãe é minha inspiração.
         }
 
 
