@@ -2,9 +2,7 @@ package db;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 
 
@@ -45,6 +43,26 @@ public class DB {
         }
         catch(IOException e){
             throw new DbException(e.getMessage());
+        }
+    }
+
+    public static void closeStatement(Statement st){ // Fechamento do statement, assim evito TryCatch no código inteiro
+        if (st != null){
+            try {
+                st.close();
+            } catch (SQLException e) {
+                throw new DbException(e.getMessage());
+            }
+        }
+    }
+
+    public static void closeResultSet(ResultSet rs){ // Fechamento do statement, assim evito TryCatch no código inteiro
+        if (rs != null){
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                throw new DbException(e.getMessage());
+            }
         }
     }
 }
