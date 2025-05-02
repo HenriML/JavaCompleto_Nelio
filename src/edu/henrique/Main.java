@@ -1,9 +1,7 @@
 package edu.henrique;
 
-import edu.henrique.cursoNelioParte3.cursoNelioModulo32.Program;
-import edu.henrique.cursoNelioParte2.cursoNelioModulo22.finallyy;
-import edu.henrique.cursoNelioParte2.cursoNelioModulo25.model.exceptions.DomainException;
-import edu.henrique.cursoNelioParte3.cursoNelioModulo29.files;
+import edu.henrique.cursoNelioParte3.cursoNelioModulo33.Program;
+
 
 import java.text.ParseException;
 
@@ -72,5 +70,5 @@ public class Main {
 
 }
 
-// Aula para assistir: #A239 (Começo)
+// Aula para assistir: #A240 (Começo)
 // Alterar rotina
