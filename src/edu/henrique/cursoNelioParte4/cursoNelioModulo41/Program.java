@@ -3,6 +3,19 @@ package edu.henrique.cursoNelioParte4.cursoNelioModulo41;
 
 // Comparator serve para ordenar, por exempo comparando preço, ou nome em alfabética e usando o ToUpper para rodar.
 // Expressão LAMBDA - A ideia é simplicidar e diminuir verbosidade, com "expressão anonima)
+
+/* Interface funcional é: Uma interface que possui um único métoodo abstrato. Assim, dá para instanciar uma classe, implementando essa interface e passando um métoodo dentro dela, assim para usar, instanciando um objeto dentro do parâmetro, exemplo:
+
+
+public class MyComparator implements Comparator<Product> {
+
+    @Override
+    public int compare(Product p1, Product p2){
+        return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+    }
+
+    list.sort(new MyComparator());
+*/
 import java.util.Arrays;
 
 public class Program {
