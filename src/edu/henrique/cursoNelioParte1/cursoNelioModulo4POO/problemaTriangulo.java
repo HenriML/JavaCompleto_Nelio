@@ -35,7 +35,7 @@ public class problemaTriangulo {
         double areaY = y.area();
 
         System.out.printf("Triangle X area: %.4f%n", areaX);
-        System.out.printf("Triangle X area: %.4f%n", areaY);
+        System.out.printf("Triangle Y area: %.4f%n", areaY);
 
 
         if (areaX > areaY){
